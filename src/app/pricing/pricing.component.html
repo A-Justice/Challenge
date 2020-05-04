@@ -1,0 +1,29 @@
+<div class="pricing">
+    <!-- <app-header></app-header> -->
+    <div class="pricing--header">
+        <div class="text">Choose a plan that is right for your business</div>
+    </div>
+    <div class="pricing--body">
+        <div *ngFor="let pricing of pricings" class="pricingbox">
+            <div class="name">{{pricing.name}}</div>
+            <div class="price">
+                <span>₵</span>
+                <span>{{pricing.price}}</span>
+                <span>/mo</span>
+            </div>
+            <div class="features">
+                <div *ngFor="let feature of pricing.features" class="feature">
+                    <svg>
+                        <use href="assets/icons/svgs.svg#icon-mark"/>
+                    </svg>
+                    <div>{{feature}}</div>
+                </div>
+            </div>
+            <div class="subscription-pane">
+                <button class="price-btn">
+                    Buy
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

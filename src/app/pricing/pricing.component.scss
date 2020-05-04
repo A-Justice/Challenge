@@ -1,0 +1,26 @@
+.pricing{
+    height: calc(100vh);
+    overflow: auto;
+    &--header{
+        height: 12rem;
+        position: relative;
+        // linear-gradient(to right,rbga(0,0,0,.5),rbga(0,0,0,.5)), 
+        background-image:url(https://img.static-kl.com/images/media/15488550-B0DB-45D9-8A2AB83099A5EAF3/?w=1500&h=500);
+        .text{
+            position: absolute;
+            left:50%;
+            top:50%;
+            transform: translate(-50%,-50%);
+            font-size: 2rem;
+            white-space: nowrap;
+            color:white;
+            text-shadow: var(--primary-shadow);
+        }
+    }
+    &--body{
+        display: flex;
+        justify-content: center;
+       // align-items: f;
+
+    }
+}
